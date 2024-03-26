@@ -11,6 +11,103 @@ const hind = Hind ({
 });
 
 export default function HomeComponent() {
+
+    var settings = {
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        speed: 2000,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 200,
+        loop: true,
+        cssEase: "linear",
+        responsive: [
+            {
+                breakpoint: 1760,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                },
+            },
+
+            {
+                breakpoint: 1460,
+                settings: {
+                  slidesToShow: 6,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false,
+                },   
+            },
+
+            {
+                breakpoint: 1290,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false,
+                }, 
+            },
+
+            {
+                breakpoint: 1100,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false,
+                }, 
+            },
+
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: false,
+              }, 
+            },
+
+            {
+                breakpoint: 900,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false,
+                }, 
+            },
+
+            {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  infiniteSlide: true,
+                 
+                }, 
+            },
+
+            {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 1,
+                  
+                }, 
+            },
+        ],
+    };
+
+
+
+
+
     return (
         <React.Fragment>
         
@@ -51,6 +148,20 @@ export default function HomeComponent() {
                                     decoding="async"
                                     alt="profile pics"
                                 ></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="container m-auto absolute">
+                        <div className="px-3">
+                            <div className="relative max-w-sm bottom-[70px] md:max-w-5xl xl:max-w-6xl px-5 lg:px-14 overflow-auto mx-auto bg-white rounded-2xl z-20"
+                            style={{
+                                boxShadow: "#48AFDE -10px 25px 50px 10px"
+                            }}      
+                            >
+                                <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
+                                    
+                                </div>
+
                             </div>
                         </div>
                     </div>
