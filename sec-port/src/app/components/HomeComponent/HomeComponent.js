@@ -1,6 +1,6 @@
 import React from 'react';
 import { Hind } from 'next/font/google';
-// import Slider from 'react-slick'
+import Slider from 'react-slick'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
 
@@ -88,7 +88,7 @@ export default function HomeComponent() {
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 1,
-                  infiniteSlide: true,
+                  initialSlide: 1,
                  
                 }, 
             },
@@ -96,7 +96,7 @@ export default function HomeComponent() {
             {
                 breakpoint: 480,
                 settings: {
-                  slidesToShow: 4,
+                  slidesToShow: 3,
                   slidesToScroll: 1,
                   
                 }, 
@@ -159,7 +159,19 @@ export default function HomeComponent() {
                             }}      
                             >
                                 <div className="lg:py-10 md:py-6 sm:py-6 cursor-all-scroll">
-                                    
+                                    <Slider {...settings}>
+                                    <img src='download (1).png' alt='picture' className="h-12" />
+                                    <img src='download (2).png' alt='picture' className="h-12" />
+                                    <img src='download (3).png' alt='picture' className="h-12" />
+                                    <img src='download (4).png' alt='picture' className="h-12" />
+                                    <img src='download (5).png' alt='picture' className="h-12" />
+                                    <img src='download (6).png' alt='picture' className="h-12" />
+                                    <img src='download (7).png' alt='picture' className="h-12" />
+                                    <img src='download (8).png' alt='picture' className="h-12" />
+                                    <img src='download.jpg' alt='picture' className="h-12" />
+                                    <img src='download.png' alt='picture' className="h-12" />
+                                    <img src='images.jpg' alt='picture' className="h-12" />
+                                    </Slider>
                                 </div>
 
                             </div>
