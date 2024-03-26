@@ -1,5 +1,6 @@
 'use client';
 import React, {useEffect, useState} from 'react'
+import Drawer from './DiagonalDrawer'
 
 export default function Header() {
     const [selectedIndex1, setSelectedIndex1] = useState(0)
@@ -19,9 +20,19 @@ export default function Header() {
         }
     },[])
 
-    console.log(isScrolled) 
+    const opnDrawer = ()=>{
+        setIsOpen(true)
+    }
   return (
         <React.Fragment>
+            <div className={`diagonal-drawer ${isOpen ? "open":""}`}>
+                <Drawer 
+                    isOpen={isOpen}
+                    setIsOpen={setIsOpen}
+                    selectedIndex1={selectedIndex1}
+                    setSelectedIndex1={setSelectedIndex1}
+                />
+            </div>
             <header className={`${isScrolled ? "headerShow" : ""} fixed top-0 z-50 transition-all duration-500`}
             style={{
                 backgroundColor: isScrolled ? "#fff" : "transparent",
